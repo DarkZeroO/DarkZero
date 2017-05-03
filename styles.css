@@ -19,9 +19,8 @@ nav
 {
 	padding: 0px;
 	margin: 0px;
-	height: 20%;
-	width: 100%;
-	display: inline;
+	height: 9%;
+
 }
 
 #container
@@ -59,22 +58,30 @@ header
 
 #navigation
 {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	font-size: 0px;
+	background-color: rgba(0, 0, 0, 0.65);
 
-padding: 0px;
-margin: 0px;
-	width: 100%;
-	height: 10%;
-	list-style-type: none;
-	background-color: rgba(0, 0, 0, 0.6);
 }
 #navigation li
 {
+	display: inline-block;
 
-width: 16.1%;
-height: 100%;
-display: inline-block;
-text-align: center;
-vertical-align:middle;
-	background: url(images/button.png)  no-repeat;
-	background-size:cover;
+
+	width: 16.6%;
+	height: 100%;
+	font-size: 20px;
+  text-align: center;
+	background: url(images/button.png) top no-repeat;
+	background-size: contain;
+}
+
+#navigation li a
+{
+	display: block;
+	padding-top: 10%;
+	text-decoration: none;
+	color: white;
 }
