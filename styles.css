@@ -1,5 +1,5 @@
 {
-		
+
 
 }
 HTML
@@ -12,8 +12,16 @@ margin:0px;
 		padding:0px;
 height:100%;
 	background:black;
-		
 
+
+}
+nav
+{
+	padding: 0px;
+	margin: 0px;
+	height: 20%;
+	width: 100%;
+	display: inline;
 }
 
 #container
@@ -23,7 +31,7 @@ height:100%;
 	position:fixed;
 	right:25%;
 	width:50%;
-	
+
 	background:url(images/test.png)  top  no-repeat;
 	background-size:cover;
 	z-index:1;
@@ -35,10 +43,10 @@ header
 	height:10%;
 	opacity: 0.9;
 	background-color:RGB(46,45,46);
-	
+
 	background-size:cover;
 	z-index:5;
-	
+
 }
 
 #EluveitieHeader
@@ -47,4 +55,26 @@ header
 	width:100%;
 	background:url(images/header.png) center no-repeat;
 	background-size:50%;
+}
+
+#navigation
+{
+
+padding: 0px;
+margin: 0px;
+	width: 100%;
+	height: 10%;
+	list-style-type: none;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+#navigation li
+{
+
+width: 16.1%;
+height: 100%;
+display: inline-block;
+text-align: center;
+vertical-align:middle;
+	background: url(images/button.png)  no-repeat;
+	background-size:cover;
 }
