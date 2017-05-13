@@ -1,10 +1,24 @@
-{
 
+@font-face {
+	font-family: Papirus;
+	src: url(fonts/papirus.ttf);
+}
 
+@font-face {
+	font-family: Rafale;
+	src: url(fonts/rafale.ttf);
+}
+*{
+	box-sizing: border-box;
 }
 HTML
 {
-	height:100%;
+	height:1500px;
+	padding: 0px;
+	margin: 0px;
+	font-family: Rafale, sans-serif;
+	color: white;
+	font-weight: 100;
 }
 body
 {
@@ -13,25 +27,33 @@ margin:0px;
 height:100%;
 	background:black;
 
+}
+a
+{
+	color: white;
 
 }
+
 nav
 {
 	padding: 0px;
 	margin: 0px;
-	height: 9%;
+	height: 85px;
+	width: 100%;
+	font-size: 0px;
 
 }
 
+
 #container
 {
+	position: relative;
+
 	height:100%;
 
-	position:fixed;
-	right:25%;
-	width:50%;
-
-	background:url(images/test.png)  top  no-repeat;
+	width:1000px;
+	margin: 0 auto;
+	background:url(images/test2.png) top   no-repeat;
 	background-size:cover;
 	z-index:1;
 }
@@ -39,9 +61,8 @@ header
 {
 
 	width:100%;
-	height:10%;
-	opacity: 0.9;
-	background-color:RGB(46,45,46);
+	height:75px;
+	background-color:rgba(46,45,46, 0.8);
 
 	background-size:cover;
 	z-index:5;
@@ -50,38 +71,325 @@ header
 
 #EluveitieHeader
 {
-	height:100%;
-	width:100%;
+	height:75px;
+	width:1000px;
 	background:url(images/header.png) center no-repeat;
-	background-size:50%;
+	background-size:500px;
 }
 
 #navigation
 {
 	padding: 0px;
 	margin: 0px;
-	height: 100%;
+	height: 85px;
 	font-size: 0px;
-	background-color: rgba(0, 0, 0, 0.65);
+
 
 }
 #navigation li
 {
 	display: inline-block;
-
-
-	width: 16.6%;
-	height: 100%;
-	font-size: 20px;
+		margin: 0px;
+	padding: 0px;
+	width: 166.5px;
+	height: 85px;
   text-align: center;
-	background: url(images/button.png) top no-repeat;
-	background-size: contain;
+	background: url(images/button.png) no-repeat;
+	background-size: 166.5px 85px;
+
+}
+
+#navigation li:hover
+{
+
+	background-size: 90%;
+	background-position: top center;
 }
 
 #navigation li a
 {
-	display: block;
+	display: inline-block;
+	font-family: Papirus, sans-serif;
+	font-weight: 100;
+
+	font-size: 25px;
 	padding-top: 10%;
 	text-decoration: none;
 	color: white;
+}
+.newsItem
+{
+	position: relative;
+	width: 100%;
+	padding: 1px 10px;
+	margin-top: 30px;
+	font-weight: 100;
+
+	font-family: Rafale;
+	background-color: rgba(55, 51, 52, 0.6);
+	color: white;
+}
+
+
+.itemImage
+{
+	margin-left: 60px;
+}
+.itemHeader
+{
+	font-size: 26px;
+
+}
+.itemContent
+{
+	font-size: 13px;
+	font-weight: 100;
+	color: RGB(211,208,208);
+}
+.itemDate
+{
+	position: absolute;
+	font-size: 13px;
+	font-weight: 100;
+	color: RGB(211,208,208);
+	text-decoration: underline;
+	bottom: 20px;
+}
+.clear
+{
+	clear: both;
+}
+
+footer
+{
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	height: 85px;
+	width: 100%;
+	font-size: 0px;
+	top:1415px;
+}
+#footer
+{
+	padding: 0px;
+	margin: 0px;
+	height: 85px;
+	font-size: 0px;
+
+
+}
+#footer	 li
+{
+	display: inline-block;
+	transform: rotate(180deg);
+	margin: 0px;
+	padding: 0px;
+	width: 166.5px;
+	height: 85px;
+  text-align: center;
+	background: url(images/button.png)  no-repeat;
+	background-size: 166.5px 85px;
+
+}
+
+#aboutBand
+{
+	width: 100%;
+
+	padding: 1px 5%;
+	margin-top: 30px;
+
+	background-color: rgba(55, 51, 52, 0.6);
+	color: white
+
+}
+#bandImage
+{
+	border: 1px solid gray;
+	margin-top: 1px;
+
+	padding: 0px;
+	line-height: 0px;
+	width: 100%;
+}
+
+#aboutBandLinks
+{
+	margin-bottom: 25px;
+}
+#aboutBandLinks li a{
+
+	color: white;
+}
+
+#biography
+{
+	width: 100%;
+
+	padding: 1px 5%;
+	margin-top: 25px;
+
+
+	background-color: rgba(55, 51, 52, 0.6);
+	color: white
+}
+h2
+{
+	font-size: 40px;
+}
+h3
+{
+	font-size:20px;
+
+}
+
+#biographyHTML
+{
+	height: 1800px;
+}
+#biography h3
+{
+	line-height: 0px;
+	margin-bottom: 20px;
+}
+#biography p{
+	color: RGB(211,208,208);
+
+}
+
+#biographyFOOTER
+{
+	top:1715px;
+}
+#members
+{
+	padding: 1px 5%;
+	margin-top: 30px;
+	padding-bottom: 20px;
+	width: 100%;
+	background-color: rgba(55, 51, 52, 0.6);
+	color: white
+}
+#membersImage
+{
+	width: 100%;
+}
+
+#albumsList
+{
+	padding: 1px 5%;
+	margin-top: 30px;
+	padding-bottom: 20px;
+	width: 100%;
+	background-color: rgba(55, 51, 52, 0.6);
+	color: white
+}
+.album{
+	position: relative;
+	margin-top: 30px
+}
+.albumImage
+{
+	position:relative;
+	width:200px;
+	border: 1px solid gray;
+}
+.albumInfo
+{
+	position: absolute;
+	left: 205px;
+
+}
+.albumInfo p
+{
+	line-height: 0.2;
+}
+audio
+{
+	position: relative;
+	filter:invert(1);
+	left: -15px;
+}
+
+#venInfo
+{
+	padding-top: 250px;
+}
+
+#albumsHTML
+{
+	height: 2000px;
+}
+#albumsFOOTER
+{
+	top:1915px;
+}
+
+.songsList
+{
+	padding-left: 18px;
+}
+#spiritInfo
+{
+	padding-top: 400px;
+
+}
+#slaniaInfo
+{
+	padding-top: 420px;
+
+}
+#evocation1Info
+{
+	padding-top: 430px;
+}
+#helvetiosInfo
+{
+	padding-top: 550px;
+
+}
+#originsInfo
+{
+	padding-top: 500px;
+
+}
+
+#toursBlock
+{
+	padding: 1px 5%;
+	margin-top: 30px;
+	padding-bottom: 20px;
+	width: 100%;
+	background-color: rgba(55, 51, 52, 0.6);
+	color: white;
+}
+
+.GigsTable
+{
+	width: 100%;
+	text-align: center;
+	border-spacing: 0px;
+}
+
+.GigsTable tr td, .GigsTable tr th
+{
+	border-bottom: 1px solid gray;
+	height: 60px;
+	font-weight: bold;
+	
+}
+.GigsTable thead > tr > td
+{
+	border: 0px;
+}
+
+#toursBlock > h2
+{
+	text-align: center;
+}
+#upcomingGigs thead tr td
+{
+	font-size: 20px;
+	font-weight: bold;
 }
