@@ -383,12 +383,21 @@ audio
 {
 	border: 0px;
 }
+.GigsTable thead > tr:hover
+{
+    	background-color: rgba(55, 51, 52, 0.0);
+
+}
+.GigsTable tr:hover
+{
+    background-color: rgba(55, 51, 52, 0.7);
+}
 
 #toursBlock > h2
 {
 	text-align: center;
 }
-#upcomingGigs thead tr td
+thead tr td
 {
 	font-size: 20px;
 	font-weight: bold;
